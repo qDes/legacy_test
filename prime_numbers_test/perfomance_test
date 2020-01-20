@@ -1,0 +1,20 @@
+Hardware: MacBook Pro (Retina, 13-inch, Early 2015)
+
+Performance test for generator implementation function:
+
+find 100 prime numbers in 0.00041484832763671875
+
+find 1000 prime numbers in 0.007827281951904297
+
+find 10000 prime numbers in 0.09565997123718262
+
+find 1000000 prime numbers in 16.612385988235474
+
+Performance test for "brootforce" function:
+
+find 100 prime numbers in 0.0016369819641113281
+
+find 1000 prime numbers in 0.0810849666595459
+
+find 10000 prime numbers in 9.495847940444946
+
