@@ -1,3 +1,4 @@
+import argparse
 import time
 
 from math import ceil
@@ -64,24 +65,18 @@ def find_prime_thr_gen(AIM):
     return prime_num
 
 
-def test_func(func, aims):
-    for aim in aims:
-        start = time.time()
-        prime = func(aim)
-        exec_time = time.time() - start
-        print(f"find {aim} prime numbers in {exec_time}")
-        print()
-
-
-def test_perfomance():
-    aims_1 = [100, 1000, 10000]
-    aims_2 = [1000000]
-    test_func(find_prime_thr_gen, aims_1+aims_2)
-    test_func(find_prime_simple, aims_1)
+def parse_args():
+    parser = argparse.ArgumentParser(description="Count n prime numbers.")
+    parser.add_argument('-n', type=int, required=True,
+                        help="an integer-n-th prime number")
+    args = parser.parse_args()
+    return args.n
 
 
 def main():
-    pass
+    n = parse_args()
+    nth_prime = find_prime_thr_gen(n)
+    print(nth_prime)
 
 
 if __name__ == "__main__":
