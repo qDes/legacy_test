@@ -9,7 +9,7 @@ class Animal:
             self.energy = energy
 
     def say(self):
-        print(f"Hello, i'm {self.__class__.__name__} and my name is {self.name}.")
+        print(f"Hello, I'm {self.__class__.__name__} and my name is {self.name}.")
 
     def get_energy(self):
         return self.energy
@@ -28,14 +28,14 @@ class Animal:
 
     def run(self):
         if self.run_energy:
-            print("My name is "+str(self.name)+" and i running.")
+            print("My name is "+str(self.name)+" and I running.")
             self.energy = self.energy - self.run_energy
         else:
             print(f"My name is {self.name} and I can't run.")
 
     def swim(self):
         if self.swim_energy:
-            print(f"My name is {self.name} and i swimming.")
+            print(f"My name is {self.name} and I swimming.")
             self.energy = self.energy - self.swim_energy
         else:
             print(f"My name is {self.name} and I can't swim.")
@@ -43,6 +43,6 @@ class Animal:
     def fly(self):
         if self.fly_energy:
             print(f"My name is {self.name} and I flying.")
-            self.energy = self.energy - self.run_energy
+            self.energy = self.energy - self.fly_energy
         else:
             print(f"My name is {self.name} and I can't fly.")
