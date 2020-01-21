@@ -3,7 +3,7 @@ from animals import Animal
 
 class Cat(Animal):
     @property
-    def run_swimming(self):
+    def run_energy(self):
         return 5
 
 
